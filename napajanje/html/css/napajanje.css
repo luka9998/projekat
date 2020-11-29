@@ -1,0 +1,301 @@
+
+html{
+    position: relative;
+    min-height: 100%;
+    margin:0;
+    box-sizing: border-box;
+    
+    
+    
+}
+header{
+    margin:0;
+    width: 100%;
+    background-color:white;
+    width: 100%;
+    margin-top: -8;
+    position: sticky;
+    top: 0;
+    
+    
+}
+#logo{
+    margin-left: -15;
+    margin-top: 5px;
+}
+.nav-bar{
+    display: inline-block;
+    float: right;
+    margin-top: 0;
+}
+.nav-bar ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 15px;
+    padding-top: 0px;
+    color: #1e1ea2;
+    font-weight: 500;
+    font-size: 20;
+    font-family: 'Staatliches';
+}
+
+
+#content{
+    background-image: url(img/background2.jpg);
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+}
+
+
+
+.meni{
+    background-color:black;
+    width: 217px;
+    height: 50px;
+    position: fixed;
+    top:58;
+    
+}
+.meni-hover{
+    background-color: black;
+    width: 0px;
+    height: 31.5%;
+    color: white;
+    position: fixed;
+    top: 100;
+    
+}
+.meni-hover:hover{
+    width: 190px;
+}
+
+
+.meni p{
+    margin-left: 50px;
+    margin-top: -5px;
+}
+.meni:hover ~.meni-hover{
+    width: 190px;
+    
+    
+}
+.meni:hover ~.meni-hover div{
+   display:grid;
+    
+}
+.meni-hover:hover > div{
+   display:grid;
+    
+}
+.meni-hover div{
+   display: none;
+   margin-bottom: 10px;
+    margin-left: 0px;
+    margin-right: 0px;
+    font-family: 'Staatliches';
+    border-bottom: 1px solid white;
+}
+.meni-hover div p{
+    margin-left: 40px;
+}
+.meni-hover a{
+    text-decoration: none;
+    color: white;
+}
+button{
+    
+    height: 50px;
+    width: 50px;
+    background-color: transparent;
+    border-radius: 10%;
+    color: white;
+    border: none;
+    
+}
+button i{
+    color: white;
+    margin-left:8px;
+    margin-top: 20px;
+}
+body{
+    margin: 0;
+    
+}
+
+
+/* main prozor sa procesorima */
+#main {
+    background-color: #fff;
+    padding:20px 0;
+    margin: 0px;
+    
+}
+#content {
+    overflow: hidden;
+    background-color: #fff;
+   
+   
+}
+#content #left {
+    background-color: #fff;
+    border: 1px solid #E9E9E9;
+    float: right;
+    margin-top: 0px;
+    margin-right: 0px;
+    
+    height: 100%;
+    width: 88.5%;
+}
+
+#content h3 {
+    background: -moz-linear-gradient(#ffffff, #F6F6F6); /* FF 3.6+ */
+    background: -ms-linear-gradient(#ffffff, #F6F6F6); /* IE10 */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ffffff), color-stop(100%, #F6F6F6)); /* Safari 4+, Chrome 2+ */
+    background: -webkit-linear-gradient(#ffffff, #F6F6F6); /* Safari 5.1+, Chrome 10+ */
+    background: -o-linear-gradient(#ffffff, #F6F6F6); /* Opera 11.10 */
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#F6F6F6'); /* IE6 & IE7 */
+    -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#F6F6F6')"; /* IE8+ */
+    background: linear-gradient(#ffffff, #F6F6F6); /* the standard */
+    border-bottom: 1px solid #E0E0E0;
+    color: #3C3C3C;
+    font-size: 12px;
+    font-weight: bold;
+    line-height: 15px;
+    padding: 11px 0 12px 20px;
+    text-transform: uppercase;
+}
+#content ul {
+    list-style:none outside none;
+    margin:0;
+    padding:0;
+}
+
+#content #left ul li {
+    display: grid;
+    grid-area: 30% 30% 30%;
+    float:left;
+    padding-bottom: 15px;
+    width: 25%;
+    
+
+}
+
+
+#content #left ul li:hover {
+    background-color: whitesmoke;
+}
+
+
+#content #left ul li .img {
+    text-align: center;
+}
+
+#content #left ul li .img img {
+    height:128px;
+    width:128px;
+}
+
+#content #left ul li .info {
+    padding: 17px 20px 0 19px;
+    
+}
+
+#main #content ul li .info .title {
+    color: #4B4B4B;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    line-height: 16px;
+    margin-left: 115px;
+    text-decoration: none;
+    text-transform: uppercase;
+    text-align: center;
+    width: 150px;
+}
+#content ul li .info .title:hover {
+    color: #0431B4;
+}
+#content #left ul li .info p {
+    color: #7F7F7F;
+    font-size: 11px;
+    line-height: 16px;
+    padding-top: 3px;
+    margin-left: 90;
+}
+#content #left ul li .info .price {
+    background: none repeat scroll 0 0 #F7F7F7;
+    color: #383838;
+    font-size: 25px;
+    
+    font-weight: bold;
+    line-height: 17px;
+    margin: 17px 0 10px;
+    padding: 6px 0 6px 8px;
+    margin-left: 140px;
+    
+    width: 75px;
+}
+
+#content #left ul li .info .price .st {
+    color: #7F7F7F;
+    font-size: 12px;
+    line-height: 16px;
+    margin-right: 3px;
+}
+
+
+
+
+#content #left ul li .info .paypal .pp2 {
+    margin-left: 110;
+    margin-top: 30;
+
+}
+
+
+
+footer{
+    background-color: #36353c;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 200px;
+    color: white;
+    
+}
+footer p{
+    padding: 23px;
+    font-family: 'Arial';
+
+    font-size: 25px;
+    margin-left: 50px;
+    text-align: center;
+}
+
+.ikonice{
+    display: inline-grid;
+    justify-items: center;
+    grid-template-columns: 50px 50px 50px 50px;
+    margin-left: 873px;
+    
+    
+}
+.ikonice i:hover{
+    
+    transform:scale(1.5,1.5);
+}
+.gg-facebook:hover{
+    color:#4267B2;
+}
+.gg-instagram:hover{
+    color:#dd0246;
+}
+.gg-google:hover{
+    color:#db4a39;
+}
+.gg-twitter:hover{
+    color:#1DA1F2;;
+}
